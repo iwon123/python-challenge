@@ -11,8 +11,8 @@ def main():
 	CB = 0
 	CC= 0
 	CD = 0
-	print('Election Results')
-	print('--------------------------')
+	print('Election Results \n')
+	print('-------------------------- \n')
 	with open(csvpath, newline = '') as election_data:
 		data = csv.reader(election_data, delimiter = ',')
 		header = next(data)
@@ -61,15 +61,15 @@ def main():
 		print(f'Winner: {winner}')
 		print('--------------------------')
 
-		f.write('Total Votes:' + str(count))
-		f.write('--------------------------')
-		f.write(f'{Candidate[0]} {str(round(CA_percentage,3))}% ({str(CA)})')
-		f.write(f'{Candidate[1]} {str(round(CB_percentage,3))}%  ({str(CB)})')
-		f.write(f'{Candidate[2]} {str(round(CC_percentage,3))}% ({str(CC)})')
-		f.write(f'{Candidate[3]} {str(round(CD_percentage,3))}% ({str(CD)})')
-		f.write('--------------------------')
-		f.write(f'Winner: {winner}')
-		f.write('--------------------------')
+		f.write(f'Total Votes: {str(count)} \n')
+		f.write('--------------------------\n')
+		f.write(f'{Candidate[0]} {str(round(CA_percentage,3))}% ({str(CA)}) \n')
+		f.write(f'{Candidate[1]} {str(round(CB_percentage,3))}% ({str(CB)}) \n')
+		f.write(f'{Candidate[2]} {str(round(CC_percentage,3))}% ({str(CC)}) \n')
+		f.write(f'{Candidate[3]} {str(round(CD_percentage,3))}% ({str(CD)}) \n')
+		f.write('-------------------------- \n')
+		f.write(f'Winner: {winner} \n')
+		f.write('-------------------------- \n')
 
 
 	f.close()
