@@ -1,5 +1,5 @@
 def main():
-	f = open("profit_loss.txt","w+")
+	f = open("PyPoll.txt","w+")
 
 	import os 
 	import csv

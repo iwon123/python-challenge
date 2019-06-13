@@ -49,7 +49,7 @@ def main():
 	    print(f'Average Change: ${str(round(average,2))}')
 	    print(f'Greatest Increase in Profits: {maxdate} (${max(changes)})')
 	    print(f'Greatest Decrease in Profits: {mindate} (${min(changes)})')
-	    f.write('Total Months: ' + str(count)) 
+	    f.write(f'Total Months: {str(count)} \n') 
 	    f.write(f'Total:  ${str(total)}')
 	    f.write(f'Average Change: ${str(round(average,2))}')
 	    f.write(f'Greatest Increase in Profits: {maxdate} (${max(changes)})')
